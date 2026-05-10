@@ -1,0 +1,345 @@
+/* 全体の基本スタイル */
+body {
+  margin: 0;
+  font-family: "Yu Gothic UI", sans-serif;
+  background-color: #f9f8ff;
+  color: #1f2a44;
+}
+
+.page-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* トップヒーローのデザイン */
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #ff9f64, #7ad4ff);
+  border-radius: 28px;
+  padding: 50px 24px;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+  margin-bottom: 36px;
+}
+
+.hero-tag {
+  display: inline-block;
+  background-color: #ffd3e5;
+  color: #d64682;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  color: #1a2a44;
+}
+
+.hero-text {
+  margin-top: 16px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #283550;
+}
+
+/* 共創工学部の説明 */
+.about {
+  margin-bottom: 36px;
+}
+
+.about h2 {
+  font-size: 1.95rem;
+  color: #1a2a44;
+  margin-bottom: 18px;
+}
+
+.about-box {
+  background: linear-gradient(135deg, rgba(255, 159, 100, 0.1), rgba(122, 212, 255, 0.1));
+  border-left: 6px solid #ff9f64;
+  border-radius: 16px;
+  padding: 24px;
+  line-height: 1.8;
+}
+
+/* セクションタイトル */
+.features h2,
+.student-picks h2,
+.learning-cards h2,
+.careers h2,
+.daily-schedule h2,
+.interviews h2,
+.call-to-action h2 {
+  font-size: 1.95rem;
+  color: #1a2a44;
+  margin-bottom: 18px;
+}
+
+/* 特徴カード（円形デザイン） */
+.feature-list {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.feature-circle .feature-shape {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff9f64, #ffc0a0);
+  margin: 0 auto 16px;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: #15436c;
+}
+
+.feature-card p {
+  margin-top: 12px;
+  line-height: 1.75;
+}
+
+/* 学生が感じる良いところカード */
+.card-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.student-card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #ff8c9e;
+}
+
+.card-emoji {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.student-card h3 {
+  margin-top: 0;
+  color: #15436c;
+}
+
+.student-card p {
+  margin-top: 12px;
+  line-height: 1.75;
+}
+
+/* 学びのイメージカード */
+.learning-card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+.learning-card:hover {
+  transform: translateY(-6px);
+}
+
+.card-icon {
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+}
+
+.learning-card h3 {
+  margin-top: 0;
+  color: #15436c;
+}
+
+.learning-card p {
+  margin-top: 12px;
+  line-height: 1.75;
+}
+
+/* 卒業後進路（三角形デザイン） */
+.career-list {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.career-item {
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  border-left: 6px solid #7ad4ff;
+}
+
+.career-triangle {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid #7ad4ff;
+  margin: 0 auto 16px;
+  opacity: 0.3;
+}
+
+.career-item h3 {
+  margin-top: 0;
+  color: #15436c;
+}
+
+.career-item p {
+  margin-top: 12px;
+  line-height: 1.75;
+}
+
+/* 1日のスケジュール */
+.daily-schedule {
+  background-color: #e7f8ff;
+  border-radius: 24px;
+  padding: 28px;
+  margin-bottom: 36px;
+}
+
+.schedule-container {
+  display: grid;
+  gap: 12px;
+}
+
+.schedule-item {
+  background-color: #ffffff;
+  border-left: 6px solid #ff9f64;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.schedule-time {
+  font-weight: 700;
+  color: #ff9f64;
+  min-width: 100px;
+}
+
+.schedule-item p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* インタビュー */
+.interview-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.interview-card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.interview-current {
+  border-top: 4px solid #ff9f64;
+}
+
+.interview-graduate {
+  border-top: 4px solid #ffc0a0;
+}
+
+.interview-badge {
+  display: inline-block;
+  background-color: #ffd3e5;
+  color: #d64682;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+}
+
+.interview-card p {
+  margin: 12px 0;
+  line-height: 1.75;
+}
+
+.interview-name {
+  font-weight: 700;
+  color: #15436c;
+  margin-top: 14px !important;
+  font-size: 0.95rem;
+}
+
+/* フッター */
+.call-to-action {
+  text-align: center;
+  background-color: #e7f8ff;
+  border-radius: 24px;
+  padding: 32px 20px;
+  margin-top: 40px;
+}
+
+.call-to-action p {
+  margin: 0 0 20px;
+  line-height: 1.7;
+}
+
+/* ボタンスタイル */
+button {
+  border: none;
+  border-radius: 999px;
+  background-color: #ff8c42;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #e16b16;
+}
+
+/* 非表示クラス */
+.hidden {
+  display: none;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 640px) {
+  .hero {
+    padding: 36px 18px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .feature-list,
+  .card-grid,
+  .career-list,
+  .interview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
