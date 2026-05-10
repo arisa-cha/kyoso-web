@@ -45,6 +45,14 @@ body {
   color: #283550;
 }
 
+/* 注意書き */
+.note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
 /* 共創工学部の説明 */
 .about {
   margin-bottom: 36px;
